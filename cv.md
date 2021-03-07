@@ -11,7 +11,7 @@
 + Junior frontend developer
 + Want to become a senior developer!
 + Very communicative, energetic, cheerful
-+ No commercial expirience, but ready for learning and improving!
++ No commercial experience, but ready for learning and improving!
 
 ## Skills:
 + JavaScript (JQuery, ES6, React)
@@ -56,7 +56,7 @@ $(document).ready(function(){
 
 ## Experience:
 
-> No commercial expirience, but have some my projects:
+> No commercial experience, but have some my projects:
 
 + http://vityarka.ru/
 + http://vityarka.ru/krayt/index.html
