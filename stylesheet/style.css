@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  text-align: center;
+}
+body {
+  background-color: #302f31;
+}
+section {
+  padding-bottom: 70px;
+}
+.content {
+  background-color: #242425;
+  margin: auto;
+  width: 1200px;
+  padding-bottom: 0;
+}
+h1 {
+  font-size: 48px;
+  padding: 30px 0;
+}
+h2 {
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+h3 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+.contacts-about{
+  display: flex;
+  justify-content: space-around;
+}
+.contacts-about ul > li {
+  text-align: left;
+}
+
+li {
+  font-size: 20px;
+}
+.skills ul{
+  list-style: none;
+}
+.code .code-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.code .code-cards .code-card{
+  justify-content: space-around;
+  text-align: left;
+  padding-bottom: 60px;
+}
+a {
+  text-decoration: none;
+  transition: .3s;
+}
+a:hover {
+  color: #A4A4A0;
+}
+.experience ul{
+  list-style: inside;
+}
+.experience ul li{
+  text-align: left;
+  width: 300px;
+  margin: auto;
+}
+
+.cources ul {
+  list-style: inside;
+
+}
+.cources ul li{
+  width: 200px;
+  margin: auto;
+  text-align: left;
+}
+footer {
+  background-color: #969398;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer a:hover{
+  color: black;
+}
+
