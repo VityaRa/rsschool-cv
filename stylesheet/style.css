@@ -12,14 +12,11 @@ body {
 section {
   padding-bottom: 70px;
 }
-hr {
-  width: 300px;
-  margin: auto;
-  margin-bottom: 20px;
-}
 .content {
   background-color: #242425;
-  margin: 0 300px;
+  margin: auto;
+  width: 1200px;
+  padding-bottom: 0;
 }
 h1 {
   font-size: 48px;
@@ -82,3 +79,17 @@ a:hover {
   margin: auto;
   text-align: left;
 }
+footer {
+  background-color: #969398;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 30px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+footer a:hover{
+  color: black;
+}
+
