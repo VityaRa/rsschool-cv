@@ -5,17 +5,121 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="stylesheet/style.css">
 </head>
 <body>
-  <div class="content">
-    <h1>Victor Lobanov</h1>
-    <div class="contacts">
+  <section class="content">
+    <h1>CV</h1>
+    <h2>Victor Lobanov</h2>
+    <section class="contacts-about">
+      <section class="about">
+        <h3>About</h3>
+        <ul>
+          <li>19 years old</li>
+          <li>First year university student</li>
+          <li>Junior frontend developer</li>
+          <li>Want to become a senior developer!</li>
+          <li>Very communicative, energetic, cheerful</li>
+          <li>No commercial experience, but ready for learning and improving!</li>
+        </ul>
+      </section>
+      <section class="contacts">
+        <h3>Contacts</h3>
+        <ul>
+          <li>Mobile: +88005553535</li>
+          <li>Gmail: victor.lobanovrul@gmail.com</li>
+          <li><a href="https://vk.com/vityarka">VK</a></li>
+        </ul>
+      </section>
+    </section>
+    <section class="skills">
+      <h2>Skills</h2>
       <ul>
-        <li>+88005553535</li>
-        <li>victor.lobanovrul@gmail.com</li>
-        <li><a href="https://vk.com/vityarka"></a></li>
+        <li>JavaScript (JQuery, ES6, React)</li>
+        <hr>
+        <li>HTML5</li>
+        <hr>
+        <li>CSS3 (Bootstrap, SASS)</li>
+        <hr>
+        <li>Git</li>
+        <hr>
+        <li>Intermediate english</li>
+        <hr>
       </ul>
-    </div>
-  </div>
+    </section>
+    <section class="code">
+      <h2>Code examples</h2>
+      <div class="code-cards">
+        <pre class="code-card">function deleteElemByClass (className) {
+          //add animation!!!
+          if (document.getElementsByClassName(className).length != 0) {
+            let elem = document.getElementById("filmList");
+            while (elem.firstChild) {
+              elem.removeChild(elem.firstChild);
+            }
+          }
+        }
+        
+        function clearSelection (obj){
+          for (elem of obj) elem.classList.remove(selectedClass)
+        }
+        
+        
+        function showFilms(jenreName){
+          currentFilmList = filmList.filter(film => film.jenre.includes(jenreName))
+          let filmListElem = document.getElementsByClassName('film-list')[0]
+        
+          for (filmElem of currentFilmList) {
+            filmListElem.insertAdjacentHTML('beforeend', makeFilmCard(filmElem.name, filmElem.rating, filmElem.imgName));
+          }
+          currentFilmList = []
+        }
+        
+        function delay(callback) {
+          setTimeout(callback, 1000)
+}</pre>
+        <pre class="code-card">  function renderSlider(){
+          $('.slider-image img').fadeOut(sliderDelay).fadeIn(sliderDelay)
+          setTimeout(() => $('.slider-image img').prop('src', './news-images/' + i + '.jpg'), sliderDelay)
+      
+          $('.slider-text p').fadeOut(sliderDelay).fadeIn(sliderDelay)
+          setTimeout(() => $('.slider-text p').text(aboutInfo[i - 1]), sliderDelay)
+      
+        }
+      
+        $('.left-btn').on('click', () => {
+          --i
+          if (i < 1) i = imageCount
+          renderSlider()
+        })
+      
+        $('.right-btn').on('click', () => {
+          ++i
+          if (i > imageCount) i = 1
+          renderSlider()
+        })
+      
+        renderSlider()
+      </pre>
+      </div>
+    </section>
+    <section class="experience">
+      <h2>Experience</h2>
+      <h3>No commercial experience, but here some of my projects:</h3>
+      <ul>
+        <li><a href="http://vityarka.ru/">My first website</a></li>
+        <li><a href="http://vityarka.ru/krayt/index.html">Landing for Krayt-company</a></li>
+        <li><a href="http://vityarka.ru/kina/kina-main.html">Film list (multipage)</a></li>
+        <li><a href="http://vityarka.ru/blitz-task/blitz-task.html">Project with React components</a></li>
+      </ul>
+    </section>
+    <section class="cources">
+      <h2>Cources</h2>
+      <ul>
+        <li><a href="https://community-z.com/events/js-intro-rss-2021q1">RS School</a></li>
+        <li><a href="https://www.youtube.com/channel/UCg8ss4xW9jASrqWGP30jXiw">Vladilen Minin</a></li>
+      </ul>
+    </section>
+  </section>
 </body>
 </html>
